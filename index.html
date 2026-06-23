@@ -19,20 +19,22 @@ body{
     background:#020d2d;
     display:flex;
     justify-content:center;
-    padding:20px;
+    align-items:center;
+    min-height:100vh;
+    padding:10px;
 }
 
 .container{
     width:100%;
-    max-width:420px;
+    max-width:340px;
 }
 
 .card{
     position:relative;
     background:linear-gradient(180deg,#03183d,#05062c);
     border:2px solid #2956ff;
-    border-radius:35px;
-    padding:25px;
+    border-radius:25px;
+    padding:18px;
     overflow:hidden;
     box-shadow:
     0 0 20px rgba(0,110,255,.4),
@@ -42,12 +44,12 @@ body{
 .card::before{
     content:"";
     position:absolute;
-    width:300px;
-    height:300px;
+    width:220px;
+    height:220px;
     background:#00aaff;
-    filter:blur(120px);
-    opacity:.15;
-    top:150px;
+    filter:blur(100px);
+    opacity:.12;
+    top:120px;
     left:50%;
     transform:translateX(-50%);
 }
@@ -56,37 +58,39 @@ body{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    margin-bottom:35px;
+    margin-bottom:20px;
+    gap:10px;
 }
 
 .live{
     background:rgba(0,180,255,.08);
     border:1px solid rgba(0,180,255,.4);
     color:#00d4ff;
-    padding:12px 22px;
-    border-radius:40px;
+    padding:8px 14px;
+    border-radius:30px;
     font-weight:700;
-    font-size:14px;
+    font-size:11px;
 }
 
 .live::before{
     content:"●";
-    margin-right:8px;
+    margin-right:5px;
 }
 
 .traders{
     color:#9ca6c0;
-    font-size:15px;
+    font-size:11px;
+    text-align:right;
 }
 
 .profile{
-    width:180px;
-    height:180px;
+    width:130px;
+    height:130px;
     margin:auto;
     border-radius:50%;
-    padding:6px;
+    padding:4px;
     background:linear-gradient(45deg,#0059ff,#9945ff);
-    box-shadow:0 0 40px rgba(0,150,255,.8);
+    box-shadow:0 0 25px rgba(0,150,255,.8);
 }
 
 .profile img{
@@ -98,19 +102,20 @@ body{
 
 .title{
     text-align:center;
-    margin-top:25px;
+    margin-top:18px;
 }
 
 .title h1{
     color:#fff;
-    font-size:54px;
+    font-size:38px;
     font-weight:800;
     line-height:1;
 }
 
 .title h2{
-    font-size:54px;
+    font-size:38px;
     font-weight:800;
+    line-height:1;
     background:linear-gradient(90deg,#00d9ff,#4e6cff,#b14cff);
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
@@ -118,77 +123,91 @@ body{
 
 .desc{
     text-align:center;
-    margin-top:25px;
+    margin-top:18px;
     color:#b8c0d6;
-    line-height:1.7;
-    font-size:17px;
+    line-height:1.6;
+    font-size:14px;
 }
 
 .features{
-    margin-top:40px;
+    margin-top:25px;
     display:flex;
-    gap:15px;
+    gap:8px;
 }
 
 .feature{
     flex:1;
     background:rgba(255,255,255,.04);
     border:1px solid rgba(255,255,255,.06);
-    border-radius:25px;
-    padding:25px 10px;
+    border-radius:18px;
+    padding:15px 8px;
     text-align:center;
 }
 
 .feature h3{
     color:#00cfff;
-    font-size:26px;
+    font-size:18px;
     font-weight:800;
 }
 
 .feature p{
     color:#a5afc5;
-    font-size:13px;
-    letter-spacing:2px;
-    margin-top:5px;
+    font-size:10px;
+    letter-spacing:1px;
+    margin-top:4px;
 }
 
 .join-btn{
     display:block;
-    margin-top:35px;
+    margin-top:25px;
     text-decoration:none;
     text-align:center;
     background:linear-gradient(90deg,#0f49ff,#00aaff);
     color:white;
-    padding:22px;
-    border-radius:30px;
-    font-size:20px;
+    padding:16px;
+    border-radius:22px;
+    font-size:16px;
     font-weight:700;
-    box-shadow:0 0 25px rgba(0,150,255,.5);
+    box-shadow:0 0 20px rgba(0,150,255,.5);
+    transition:.3s;
 }
 
-@media(max-width:430px){
+.join-btn:hover{
+    transform:translateY(-2px);
+}
 
-.title h1,
-.title h2{
-    font-size:44px;
+@media(max-width:360px){
+
+.container{
+    max-width:310px;
 }
 
 .profile{
-    width:160px;
-    height:160px;
+    width:115px;
+    height:115px;
 }
 
-.features{
-    gap:10px;
+.title h1,
+.title h2{
+    font-size:32px;
+}
+
+.desc{
+    font-size:13px;
 }
 
 .feature h3{
-    font-size:22px;
+    font-size:16px;
+}
+
+.join-btn{
+    font-size:15px;
+    padding:14px;
 }
 }
 </style>
 </head>
-   <!-- Meta Pixel Code -->
+    <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -204,7 +223,7 @@ fbq('track', 'PageView');
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1037096975532437&ev=PageView&noscript=1"
 /></noscript>
-<!-- End Meta Pixel Code --> 
+<!-- End Meta Pixel Code -->
 <body>
 
 <div class="container">
@@ -217,8 +236,7 @@ src="https://www.facebook.com/tr?id=1037096975532437&ev=PageView&noscript=1"
 </div>
 
 <div class="profile">
-    <img src="https://i.ibb.co/8n2ns63M/DC-4-PKNf-400x400.jpg"
-class="profile" alt="Profile">
+<img src="https://i.ibb.co/8n2ns63M/DC-4-PKNf-400x400.jpg" alt="Profile">
 </div>
 
 <div class="title">
@@ -232,7 +250,6 @@ Premium Calls • Smart Analysis • Daily Profit Setups
 </div>
 
 <div class="features">
-
 <div class="feature">
 <h3>24/7</h3>
 <p>UPDATES</p>
@@ -247,10 +264,9 @@ Premium Calls • Smart Analysis • Daily Profit Setups
 <h3>LIVE</h3>
 <p>CALLS</p>
 </div>
-
 </div>
 
-<a href="https://telegram.me/+gfPBMgVfPr5mZThh" class="join-btn">
+<a href="https://telegram.me/+gfPBMgVfPr5mZThh" target="_blank" class="join-btn">
 🚀 JOIN TELEGRAM NOW!
 </a>
 
